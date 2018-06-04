@@ -1,0 +1,6 @@
+each item in readdir
+  .item
+    a(href=path.join(viewPath, item)) #{item}
+form(action=viewPath method="POST" enctype="multipart/form-data")
+  input(type="file" name="files" multiple)
+  input(type="submit")
